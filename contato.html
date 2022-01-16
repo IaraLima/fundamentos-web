@@ -15,27 +15,37 @@
             Entre em contato comigo
         </h1>
         <div class="container mg-50">
-            <div>
-                <h2>Mensagem</h2>
+            <div class="mg-10">
+               
                 <form>
-                    <label for="">Nome:</label>
-                    <input type="text" id="nome">
-         
-                 <br>
-                 <br>
-         
-                    <label for="">Email:</label>
-                    <input type="email" id="email">
-                    <br>
-                    <br>
-                    <label for="">Assunto:</label>
-                    <textarea name="Assunto" id="nome" cols="60" rows="5"></textarea>
-                    <button class="mg-50">Enviar</button>
+                    <div class="mg-10">
+                        <label for="nome" class="mg-10">Nome:</label> <br>
+                        <input type="text" id="nome" class="mg-10" placeholder="Nome" onkeyup='validaNome()'>
+                        <div id="alertNome" class="mg-10"></div>
+             
+                    </div>
+                    <div class="mg-10">
+                        <label for="email" class="mg-10">Email:</label><br>
+                        <input type="email" class="mg-10" id="email" placeholder="email@algo.com" onkeyup='validaEmail()'>
+                        <div id="alertEmail" class="mg-10"></div>
+             
+                    </div>           
+       
+                    <div class="mg-10">
+                            <label for="assunto" class="mg-10">Assunto:</label><br>
+                                        
+                            <textarea id="assunto" cols="60" class="mg-10" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea> <br>
+
+                        </div>    
+                    <div class="mg-10">
+                        <button class="mg-10">Enviar</button>
+                    </div>
+                        
                 </form>
                 
             </div>
             <div>
-                <h2>Endereço:</h2>
+           
                 <p>Av. dos Estados</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8867612901304!2d-46.530695185381845!3d-23.644226070541926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4297b7880d57%3A0xaeddba2a824280b6!2sUFABC%20-%20Universidade%20Federal%20do%20ABC!5e0!3m2!1spt-BR!2sbr!4v1641840468623!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
          
@@ -64,7 +74,7 @@
                 Todos os direitos reservados Iara Lima &copy
             </p>
         </footer>
-        
+        <script src="assests/js/script.js"></script>
     </body>
     
 </html>
